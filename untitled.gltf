@@ -1,0 +1,146 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.1.46",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube"
+        },
+        {
+            "name" : "Light",
+            "rotation" : [
+                0.16907575726509094,
+                0.7558803558349609,
+                -0.27217137813568115,
+                0.570947527885437
+            ],
+            "translation" : [
+                4.076245307922363,
+                5.903861999511719,
+                -1.0054539442062378
+            ]
+        },
+        {
+            "name" : "Camera",
+            "rotation" : [
+                0.483536034822464,
+                0.33687159419059753,
+                -0.20870360732078552,
+                0.7804827094078064
+            ],
+            "translation" : [
+                7.358891487121582,
+                4.958309173583984,
+                6.925790786743164
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 56,
+            "max" : [
+                1.3269622325897217,
+                0.4444381296634674,
+                1.833498477935791
+            ],
+            "min" : [
+                -0.04836773872375488,
+                -0.032814979553222656,
+                -1.8349542617797852
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 56,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 56,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 84,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 672,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 672,
+            "byteOffset" : 672
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 448,
+            "byteOffset" : 1344
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 168,
+            "byteOffset" : 1792
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1960,
+            "uri" : "data:application/octet-stream;base64,Li+kPwBpBr0qruW/5NmpPwBpBr3I3+q/5NmpPwBpBr0UsOo/Li+kPwBpBr12fuU/QB1GvcBoBr0UsOo/5NmpPwBpBr0UsOo/5tmpP1mN4z4UsOo/QB1GvWWN4z4UsOo/5tmpP1mN4z4UsOo/5NmpPwBpBr0UsOo/5NmpPwBpBr3I3+q/5tmpP1mN4z7I3+q/5tmpP1mN4z4UsOo/5tmpP1mN4z7I3+q/QB1GvWWN4z7I3+q/QB1GvWWN4z4UsOo/QB1GvWWN4z7I3+q/QB1GvcBoBr3I3+q/QB1GvcBoBr0UsOo/QB1GvWWN4z4UsOo/5tmpP1mN4z7I3+q/5NmpPwBpBr3I3+q/QB1GvcBoBr3I3+q/QB1GvWWN4z7I3+q/MC+kPy/ZzD4qruW/Li+kPwBpBr0qruW/Li+kPwBpBr12fuU/MC+kPy/ZzD52fuU/QB1GvcBoBr0UsOo/QB1GvcBoBr3I3+q/gDSGu8BoBr0qruW/gDSGu8BoBr12fuU/gDSGu8BoBr0qruW/QB1GvcBoBr3I3+q/5NmpPwBpBr3I3+q/Li+kPwBpBr0qruW/QB1GvcBoBr0UsOo/gDSGu8BoBr12fuU/Li+kPwBpBr12fuU/5NmpPwBpBr0UsOo/gDSGuzvZzD52fuU/gDSGuzvZzD4qruW/MC+kPy/ZzD4qruW/MC+kPy/ZzD52fuU/MC+kPy/ZzD52fuU/Li+kPwBpBr12fuU/gDSGu8BoBr12fuU/gDSGuzvZzD52fuU/gDSGu8BoBr0qruW/Li+kPwBpBr0qruW/MC+kPy/ZzD4qruW/gDSGuzvZzD4qruW/gDSGuzvZzD52fuU/gDSGu8BoBr12fuU/gDSGu8BoBr0qruW/gDSGuzvZzD4qruW/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAAAAAAIA/AAAAgAAAAAAAAIA/AAAAgAAAAAAAAIA/AAAAgAAAAAAAAIA/AACAP9EZBrUAAACAAACAP9EZBrUAAACAAACAP9EZBrUAAACAAACAP9EZBrUAAACAVZqLNAAAgD8AAACAVZqLNAAAgD8AAACAVZqLNAAAgD8AAACAVZqLNAAAgD8AAACA//9/vwAAAAAAAACA//9/vwAAAAAAAACA//9/vwAAAAAAAACA//9/vwAAAAAAAACAAAAAgAAAAAAAAIC/AAAAgAAAAAAAAIC/AAAAgAAAAAAAAIC/AAAAgAAAAAAAAIC/AACAv0HWEzUAAACAAACAv0HWEzUAAACAAACAv0HWEzUAAACAAACAv0HWEzUAAACAAAAAgAAAgL8AAACAAAAAgAAAgL8AAACAAAAAgAAAgL8AAACAAAAAgAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAClRAtAAAgL8AAACAgjWVtAAAgL8AAACAgjWVtAAAgL8AAACAgjWVtAAAgL8AAACAgjWVtAAAgL8AAACAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAIAAAIA/AAAAAAAAAIAAAIA/AAAAAAAAAIAAAIA/AAAAAAAAAIAAAIA/AACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAAAgPwAAQD8AACA/AABAPwAAID8AAIA/AAAgPwAAgD8AACA/AACAPgAAID8AAAAAAADAPgAAAAAAAMA+AACAPgAAwD4AAIA/AAAgPwAAgD8AACA/AABAPwAAwD4AAEA/AAAAPgAAgD4AAAA+AAAAPwAAwD4AAAA/AADAPgAAgD4AAMA+AAAAPwAAID8AAAA/AAAgPwAAgD4AAMA+AACAPgAAwD4AAEA/AAAgPwAAQD8AACA/AAAAPwAAwD4AAAA/AAAgPwAAQD8AACA/AABAPwAAID8AAIA/AAAgPwAAgD8AACA/AACAPgAAID8AAAA/AAAgPwAAAD8AACA/AACAPgAAID8AAAA/AAAgPwAAAD8AACA/AABAPwAAID8AAEA/AAAgPwAAgD4AACA/AACAPgAAID8AAAAAAAAgPwAAAAAAACA/AACAPgAAID8AAAA/AABgPwAAAD8AAGA/AACAPgAAID8AAAAAAAAgPwAAAAAAACA/AACAPgAAID8AAIA+AAAgPwAAAD8AACA/AABAPwAAID8AAEA/AAAgPwAAAD8AACA/AACAPgAAID8AAIA+AAAgPwAAAD8AACA/AAAAPwAAAQACAAMAAAACAAQABQAGAAcABAAGAAgACQAKAAgACgALAAwADQAOAAwADgAPABAAEQASABAAEgATABQAFQAWABQAFgAXABgAGQAaABgAGgAbABwAHQAeABwAHgAfACAAIQAiACAAIgAjACQAJQAmACQAJgAnACgAKQAqACgAKgArACwALQAuACwALgAvADAAMQAyADMAMAAyADQANQA2ADQANgA3AA=="
+        }
+    ]
+}
