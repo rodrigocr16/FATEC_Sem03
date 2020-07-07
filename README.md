@@ -125,3 +125,49 @@ Nas linhas 08-09 e 18-20 são executados procedimentos que preparam o ambiente p
 
 - Em 18-19 os botões de estagiamento têm suas cores redefinidas
 - Em 21 são chamadas todas as funções de `reset`, que devolvem as peças de Montagem para suas posições e rotações originais.
+___
+## Montagem
+![05_montagem](https://raw.githubusercontent.com/rodrigocr16/Projeto_Latecoere/master/05_Montagem.gif)
+
+Ao clicar em uma das peças no modo Montagem, caso seja a peça correta naquela etapa do processo, a peça selecionada será posicionada no centro da tela e o botão correspondente àquela etapa da montagem acenderá com uma luz verde, indicando o acerto.
+
+No exemplo abaixo veremos o que acontece ao clicarmos na peça 02:
+```
+document.querySelector("#montagemPeca2").addEventListener(
+  "click", function() {
+    if(estado == 6){
+      btn2.setAttribute('color', '#39ff14');
+      this.emit('start');
+      estado = 7;
+    } else {
+      error();
+    }
+  }
+);
+```
+Como podemos observar, a primeira etapa é verificar se a variável de controle `estado` está no valor correto. O valor da variável indica o estado do processo, seja de montagem ou de estagiamento. Neste caso, `estado == 6` implica que a peça 01 do processo de montagem está no lugar certo, indicando que a próxima etapa é encaixar a peça 02.
+
+Se o evento acima for um sucesso, ele acenderá o botão com a luz verde (hex `#39ff14`) e chamará o evento `start` definido na própria peça, como gatilho das animações que alterarão a posição e a rotação da peça:
+```
+<a-gltf-model id = "montagemPeca2" visible = "true" src = "#peca2"
+              position = "4 -3.5 -11" rotation="0 -70 0" scale="2 2 2"
+              animation__click1 = "startEvents: start; property: position; to: 0 -1.5 -7; dur: 500"
+              animation__click2 = "startEvents: start; property: rotation; to: 0 -30 0; dur: 500">
+</a-gltf-model>
+```
+
+Depois disso, a variável `estado` recebe o valor 7, o que indica que a peça 02 está no lugar correto e a próxima peça pode ser selecionada.
+
+### Erro na Montagem
+![06_erro](https://raw.githubusercontent.com/rodrigocr16/Projeto_Latecoere/master/05_Erro.gif)
+
+No caso de a peça selecionada não ser a peça correta para a etapa seguinte da montagem - ou seja, se o valor da variável `estado` não for o valor exigido por aquela peça - será chamada uma função de erro `error()`:
+```
+function error(){
+  if(estado == 5){ btn1.setAttribute('color', '#ff0000'); }
+  if(estado == 6){ btn2.setAttribute('color', '#ff0000'); }
+  if(estado == 7){ btn3.setAttribute('color', '#ff0000'); }
+}
+```
+
+Esta função simplesmente altera a cor do botão correspondente ao estágio pendente a fim de simular a emissão de uma luz vermelha brilhante. Embora seja um efeito simples, é um indicativo claro de que o usuário escolheu a peça errada para aquela etapa da montagem.
