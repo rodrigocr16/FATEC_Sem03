@@ -106,18 +106,22 @@ Quando a alavanca é acionada ela altera o valor de uma variável de controle `e
 17.      caixavidro.setAttribute('position', '0 10 0');
 18.      btn1.setAttribute('color', '#0f2442'); btn2.setAttribute('color', '#0f2442');
 19.      btn3.setAttribute('color', '#0f2442'); btn4.setAttribute('color', '#0f2442');
-20.      estado = 0;
-21.      reset1(); reset2(); reset3(); reset4();
+20.      reset1(); reset2(); reset3(); reset4();
+21.      estado = 0;
 22.    }
 ```
 Note que a função realiza diversos procedimentos - alguns estéticos, e outros funcionais:
 - Nas linhas 02-03 e 12-13 é feita a animação da manopla e da haste da alavanca, para que esta aparente ser acionada;
 - Em 04-05 e 14-15 as luzes mudam de intensidade para que o usuário possa focar no que é importante em cada modo;
 - Em 06-07 e 16-17 os objetos `vidraca` e `glassbox` são movidos para impedir que o usuário interaja com elementos incongruentes com o modo selecionado;
-- Em 10 e 20 a variável `estado` tem seu valor alterado para auxiliar nos processos pertinentes ao modo recém habilitado.
+- Em 10 e 21 a variável `estado` tem seu valor alterado para auxiliar nos processos pertinentes ao modo recém habilitado.
 
-Ao transicionar de ESTAGIAMENTO para MONTAGEM, as ações são diferentes do caminho inverso:
+Nas linhas 08-09 e 18-20 são executados procedimentos que preparam o ambiente para o estagiamento recém-habilitado.
+08-09 preparam o ambiente para o modo de MONTAGEM, enquanto 18-20 preparam para o modo de ESTAGIAMENTO.
+
+![07_reset](https://raw.githubusercontent.com/rodrigocr16/Projeto_Latecoere/master/07_Reset.gif)
+
 - Em 08-09 todos os objetos de Estagiamento atualmente exibidos tornam-se invisíveis, a fim de não atrapalhar no processo de montagem.
 
-No caminho inverso, de MONTAGEM para ESTAGIAMENTO, o seguinte acontece:
+- Em 18-19 os botões de estagiamento têm suas cores redefinidas
 - Em 21 são chamadas todas as funções de `reset`, que devolvem as peças de Montagem para suas posições e rotações originais.
