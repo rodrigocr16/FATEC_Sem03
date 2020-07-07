@@ -159,7 +159,7 @@ Se o evento acima for um sucesso, ele acenderá o botão com a luz verde (hex `#
 Depois disso, a variável `estado` recebe o valor 7, o que indica que a peça 02 está no lugar correto e a próxima peça pode ser selecionada.
 
 ### Erro na Montagem
-![06_erro](https://raw.githubusercontent.com/rodrigocr16/Projeto_Latecoere/master/05_Erro.gif)
+![06_erro](https://raw.githubusercontent.com/rodrigocr16/Projeto_Latecoere/master/05_Erros.gif)
 
 No caso de a peça selecionada não ser a peça correta para a etapa seguinte da montagem - ou seja, se o valor da variável `estado` não for o valor exigido por aquela peça - será chamada uma função de erro `error()`:
 ```
