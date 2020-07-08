@@ -4,7 +4,7 @@ Este projeto foi feito com o intuito de auxiliar no treinamento de funcionários
 As partes utilizadas neste projeto foram fornecidas pelo professor da disciplina, Giuliano Araujo Bertoti.
 
 O projeto foi feito através da ferramenta CodePen, utilizando HTML e JavaScript em conjunto com bibliotecas em A-FRAME.
-O projeto em sua totalidade pode ser acessado no site através ![deste link](https://codepen.io/rodrigo_reis16/pen/PoPLYxO?editors=1010).
+O projeto em sua totalidade pode ser acessado no site através [deste link](https://codepen.io/rodrigo_reis16/pen/PoPLYxO).
 
 Este repositório armazena todos os modelos e texturas utilizados no projeto, além de informações sobre o mesmo e prévias de suas funcionalidades.
 ___
